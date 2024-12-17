@@ -1,0 +1,36 @@
+﻿<Window x:Class="MyAPP.author"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyAPP"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="327" Width="568" Background="#FF4C6978">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="165*"/>
+            <RowDefinition Height="131*"/>
+            <RowDefinition Height="15*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="28*"/>
+        </Grid.ColumnDefinitions>
+        <Menu Height="25" VerticalAlignment="Top" Grid.ColumnSpan="2" Background="#FF303030">
+            <MenuItem Header="Меню" Foreground="White" HorizontalAlignment="Center">
+                <MenuItem Header="Выполнить">
+                    <MenuItem Header="Запустить зарядку"></MenuItem>
+                    <MenuItem Header="Остановить зарядку"></MenuItem>
+                    <MenuItem Header="Проверка аккумулятора"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Выйти">
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="О приложении" Foreground="White" HorizontalAlignment="Center"/>
+        </Menu>
+        <Label Content="Программа для зарядки литиевых аккумуляторов" Margin="107,25,84,100" Foreground="White" FontSize="16" Grid.ColumnSpan="2"/>
+        <Label Content="Разработчик: Томашевич В.Д." Margin="0,65,191,60" Foreground="White" FontSize="16" Grid.ColumnSpan="2"/>
+        <Label Content="Почта: Vladtomashevich2006@gmail.com" Margin="0,95,191,30" Foreground="White" FontSize="16" Grid.ColumnSpan="2"/>
+        <Image x:Name="myImage" Stretch="Uniform" Margin="240,136,-16,10" Source="Gif.gif" Grid.ColumnSpan="2" Grid.RowSpan="3"/>
+    </Grid>
+</Window>
